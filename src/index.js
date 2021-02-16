@@ -42,3 +42,16 @@ function cutNumber(number){
         }
         if(flag!=true){
             for(j=0;j<arr.length;j++){
+                if(arr[j].value==Number(number[i])*n){
+                    str= arr[j].name+" " + str;
+                }
+            }  
+        }  
+        n=1;
+        i++;
+        flag=false;
+    }
+    return str;
+};
+
+
